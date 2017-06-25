@@ -10,7 +10,8 @@ container on [DockerHub](https://hub.docker.com/r/nodered/node-red-docker/).
 
 To run this directly in docker at it's simplest just run
 
-        docker run -it -p 1880:1880 --name mynodered nodered/node-red-docker
+        docker run -it -p 1880:1880 -v /home/user/nodered/config:/data/ --name nodered nodered/node-red-docker
+        
 
 Let's dissect that command...
 
